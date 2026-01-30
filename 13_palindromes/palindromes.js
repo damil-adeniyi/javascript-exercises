@@ -1,7 +1,7 @@
 const palindromes = function (string) {
   // original
-  const sense = string.toLowerCase().replaceAll(" ", "").replaceAll(",", "").replaceAll(".", "");
-  let split = sense.split("")
+  const cleanedString = string.toLowerCase().replaceAll(" ", "").replaceAll(",", "").replaceAll(".", "");
+  let split = cleanedString.split("")
   let newSplit = split.join("|")
 
   // reversed
